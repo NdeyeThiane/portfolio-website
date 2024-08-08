@@ -1,165 +1,165 @@
-*{
-    box-sizing: content-box;
-    padding: 0;
-    color:rgb(228, 238, 239);
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
-    margin:0;
+* {
+  box-sizing: content-box;
+  padding: 0;
+  color: rgb(228, 238, 239);
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  --main-color-light: rgb(168, 125, 208);
+  --main-color: rgb(182, 106, 207);
+  --main-color-dark: rgb(107, 12, 107);
 }
+
 .selector-for-some-widget {
-    box-sizing: content-box;
-  }
-  html {
-    margin:0px;
-  }
+  box-sizing: content-box;
+}
+
+html {
+  margin: 0px;
+}
+
 .container {
-    display: flex;
-    flex-flow:row wrap;
-    height: 100vh;
-    width: 100vh;
-    /* background-color: rgb(5, 5, 42); */
-    background-color:rgb(182, 106, 207);
-
-    margin:0px;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  width: 100vh;
+  background-color: var(--main-color);
+  margin: 0px;
 }
+
 .headers {
-    height: 60vh;  
-    background-image: url("https://png.pngtree.com/background/20230619/original/pngtree-abstract-geometric-background-a-3d-render-of-neon-purple-and-blue-picture-image_3760613.jpg") !important;
-
+  height: 60vh;
+  background-image: url("https://png.pngtree.com/background/20230619/original/pngtree-abstract-geometric-background-a-3d-render-of-neon-purple-and-blue-picture-image_3760613.jpg") !important;
 }
- 
+
 .exper {
-    height: 35vh;
-    margin-bottom: 2px;
-   
+  height: 35vh;
+  margin-bottom: 2px;
 }
 
-.skills{    
-    height: 20vh; 
-    padding: 20px; 
+.skills {
+  height: 20vh;
+  padding: 20px;
 }
+
 .nav {
-    background-color: white;
-    box-shadow: inset;
-    justify-content: space-evenly;
-
+  background-color: white;
+  box-shadow: inset;
+  justify-content: space-evenly;
 }
+
 .nav a {
-    color:rgb(107, 12, 107);
+  color: var(--main-color-dark);
 }
 
 .presentation {
-    display:flex;
-    flex-flow:column wrap ;
-
-    align-self: center;
-    
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
 }
 .texts {
-    display:flex;
-    flex-flow: column wrap;
-    align-self: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
 }
-.texts h1,  p{
-   align-self: center;
+
+.texts h1,
+p {
+  align-self: center;
 }
+
 .imag {
-    display:flex;
-    flex-flow:row-reverse wrap;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
 }
+
 .imag img {
-    border: none;
-    border-radius: 100%;
-    
+  border: none;
+  border-radius: 100%;
 }
+
 .contact {
-    height: 20vh;
-   
+  height: 20vh;
 }
+
 input {
-    display: block;
-    color:rgb(107, 12, 107);
-    
+  display: block;
+  color: var(--main-color-dark);
 }
+
 form {
-    align-self: center;
-
+  align-self: center;
 }
+
 .edcontainer {
-    box-sizing: content-box;
-    margin:0;
-    padding: 10px;
-    overflow-x: hidden;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 10px;
+  overflow-x: hidden;
+}
 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-height: 100%;
+  z-index: -100;
 }
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-height: 100%;
-    z-index: -100;
-}
+
 .educ {
-
-    flex-flow: column wrap;
-    padding-left: 10px;
-    justify-content: center;    
+  flex-flow: column wrap;
+  padding-left: 10px;
+  justify-content: center;
 }
-.educ1, .educ2 {
-   
-    flex-flow: column wrap;
-    align-self: center;
-    padding-left: 10px;
+
+.educ1,
+.educ2 {
+  flex-flow: column wrap;
+  align-self: center;
+  padding-left: 10px;
 }
 
 .cert {
-    height:55vh;
-    align-self: center;
-    padding-left: 10px;
+  height: 55vh;
+  align-self: center;
+  padding-left: 10px;
 }
 
 p {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
-.cert1, .cert2, .cert3 {
-    flex-shrink: 1;
-    margin-bottom: 0;
+.cert1,
+.cert2,
+.cert3 {
+  flex-shrink: 1;
+  margin-bottom: 0;
 }
 
-.contact{
-
-    color: rgb(168, 125, 208);
-    padding-left: 450px;
-    padding-top: 200px;
-    
+.contact {
+  color: var(--main-color-light);
+  padding-left: 450px;
+  padding-top: 200px;
 }
 
 label {
-    color: rgb(168, 125, 208);
+  color: var(--main-color-light);
 }
 .input {
-    width: 300px;
+  width: 300px;
 }
 
 .icons {
-    display:flex;
-    flex-flow:row-reverse wrap;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 10px;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
 }
-
-
-
-
-
-
-
